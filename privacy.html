@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy – Belt Test Tracker</title>
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height: 1.55; margin: 0; }
+    header { background:#222; color:#fff; padding:24px 16px; }
+    main { max-width: 900px; margin: 0 auto; padding: 24px 16px; }
+    h1, h2 { margin: 0 0 12px; }
+    section { margin: 24px 0; }
+    a { color: #0b5bd3; }
+    .muted { color: #666; font-size: 0.95em; }
+    ul { padding-left: 1.3em; }
+    code { background:#f4f4f4; padding:2px 4px; border-radius:4px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Privacy Policy</h1>
+    <div class="muted">Effective date: 2025-10-01</div>
+  </header>
+  <main>
+    <section>
+      <p><strong>Belt Test Tracker</strong> (“the App”) is produced by <strong>NicamCo</strong>. This policy explains what information the App accesses and how that information is handled.</p>
+    </section>
+
+    <section>
+      <h2>Summary</h2>
+      <ul>
+        <li>The App uses the device <strong>camera</strong> to capture student faces <em>only for on‑device face enrollment and check‑in</em>.</li>
+        <li><strong>No photos are permanently stored</strong> by the App. After enrollment, the App keeps only <em>numerical feature vectors</em> (“face embeddings”) on the device to enable matching.</li>
+        <li><strong>No personal data is transmitted</strong> to NicamCo or third parties. The App does not share data.</li>
+        <li>All data remains <strong>local to the device</strong> unless you explicitly export it.</li>
+      </ul>
+    </section>
+
+    <section id="camera">
+      <h2>Camera Permission (android.permission.CAMERA)</h2>
+      <p>The camera is used to capture facial images during enrollment and to perform local face matching at check‑in. Images are processed in memory and discarded after embeddings are created. If the App cannot read a face, you may retake the photos; unsuccessful attempts are not retained.</p>
+    </section>
+
+    <section id="data">
+      <h2>Data We Store</h2>
+      <ul>
+        <li><strong>Student records you enter</strong> (e.g., name, ID, attendance, belts) are stored locally on the device.</li>
+        <li><strong>Face embeddings</strong> (mathematical vectors) generated from enrollment are stored locally to support on‑device matching.</li>
+      </ul>
+      <p>We do <strong>not</strong> permanently store camera images or video.</p>
+    </section>
+
+    <section id="processing">
+      <h2>On‑Device Processing</h2>
+      <p>Face detection and embedding generation occur entirely on the device using on‑device models. Embeddings are used with cosine‑similarity to identify or verify the enrolled student at check‑in.</p>
+    </section>
+
+    <section id="exports">
+      <h2>Exports & Backups</h2>
+      <p>If you use the App’s export features, the exported file remains under your control. You are responsible for how you store or share exported data.</p>
+    </section>
+
+    <section id="retention">
+      <h2>Data Retention & Deletion</h2>
+      <ul>
+        <li>You may delete a student’s face enrollment at any time from the Students table; this removes the stored embeddings.</li>
+        <li>Uninstalling the App removes local data stored in the App’s directories. (Data you exported elsewhere is unaffected.)</li>
+      </ul>
+    </section>
+
+    <section id="children">
+      <h2>Children & Student Use</h2>
+      <p>The App is intended for use by martial‑arts schools and families to track attendance and rank progress. If students are minors, a parent/guardian or school operator should manage enrollment and exports in accordance with applicable laws and school policies.</p>
+    </section>
+
+    <section id="security">
+      <h2>Security</h2>
+      <p>Data is stored locally using standard platform storage. Protect device access with a passcode and limit physical access to the device. For shared or kiosk devices, configure system‑level protections where possible.</p>
+    </section>
+
+    <section id="sharing">
+      <h2>Data Sharing</h2>
+      <p>The App does not share personal data with NicamCo or third parties. There are no advertising SDKs.</p>
+    </section>
+
+    <section id="changes">
+      <h2>Changes to This Policy</h2>
+      <p>We may update this policy from time to time. Material changes will be reflected by updating the Effective date above.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Questions? Contact: <a href="mailto:support@nicamco.com">support@nicamco.com</a></p>
+    </section>
+  </main>
+</body>
+</html>
