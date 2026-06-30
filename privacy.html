@@ -19,78 +19,88 @@
 <body>
   <header>
     <h1>Privacy Policy</h1>
-    <div class="muted">Effective date: 2025-10-01</div>
+    <div class="muted">Effective date: 2026-06-27</div>
   </header>
   <main>
     <section>
       <div class="muted" style="margin-bottom:8px">
-  <a rel="prev" href="#" onclick="
-    if (document.referrer && document.referrer !== location.href) {
-      history.back();
-    } else {
-      window.location.href = 'index.html';
-    }
-    return false;
-  ">← RETURN</a>
+  <a rel="prev" href="index.html">← RETURN</a>
 </div>
-      <p><strong>Belt Test Tracker</strong> (“the App”) is produced by <strong>NicamCo</strong>. This policy explains what information the App accesses and how that information is handled.</p>
-    </section>
+      <p><strong>Belt Test Tracker</strong> is a browser-based tool produced by <strong>NicamCo</strong> and run from the NicamCo server. It may be accessed through a regular web browser or through the Belt Test Tracker Android WebView wrapper. This policy explains what information Belt Test Tracker uses and how that information is handled.</p>
+   </section>
 
     <section>
       <h2>Summary</h2>
       <ul>
-        <li>The App uses the device <strong>camera</strong> to capture student faces <em>only for on‑device face enrollment and check‑in</em>.</li>
-        <li><strong>No photos are permanently stored</strong> by the App. After enrollment, the App keeps only <em>numerical feature vectors</em> (“face embeddings”) on the device to enable matching.</li>
-        <li><strong>No personal data is transmitted</strong> to NicamCo or third parties. The App does not share data.</li>
-        <li>All data remains <strong>local to the device</strong> unless you explicitly export it.</li>
+        <li>Belt Test Tracker runs from the NicamCo server and may be accessed through a regular web browser or through the Android WebView wrapper.</li>
+        <li>You may keep your working data local by not connecting a cloud account. Local-only use is limited to 8 students.</li>
+        <li>If you connect a cloud account, cloud backup(optional via checkmark in the Control Panel) and premium entitlements are enabled for that account.</li>
+        <li>You own the data you enter. NicamCo does not sell or share user data.</li>
+        <li>Exports and auto-export are recommended so you keep your own backup copies and reduce the risk of data loss.</li>
       </ul>
     </section>
 
     <section id="camera">
-      <h2>Camera Permission (android.permission.CAMERA)</h2>
-      <p>The camera is used to capture facial images during enrollment and to perform local face matching at check‑in. Images are processed in memory and discarded after embeddings are created. If the App cannot read a face, you may retake the photos; unsuccessful attempts are not retained.</p>
+      <h2>Camera Access</h2>
+      <p>If face enrollment or kiosk check-in is used, the browser may ask for camera access. The camera is used to capture facial images during enrollment and to perform local face matching at check-in. Images are processed in memory and discarded after embeddings are created. If Belt Test Tracker cannot read a face, you may retake the photos; unsuccessful attempts are not retained.</p>
     </section>
 
     <section id="data">
       <h2>Data We Store</h2>
       <ul>
-        <li><strong>Student records you enter</strong> (e.g., name, ID, attendance, belts) are stored locally on the device.</li>
-        <li><strong>Face embeddings</strong> (mathematical vectors) generated from enrollment are stored locally to support on‑device matching.</li>
+        <li><strong>Student records you enter</strong> (e.g., name, ID, attendance, belts, belt size, gi/dobok size, billing fields, contact details, and notes) are stored in the browser running Belt Test Tracker.</li>
+        <li><strong>Attendance records, belt tests, settings, and notification state</strong> are stored in the browser and may be included in exports and cloud backups.</li>
+        <li><strong>Face embeddings</strong> (mathematical vectors) generated from enrollment are stored to support local face matching.</li>
+        <li>If you connect cloud backup, the same backup data may be stored on the NicamCo server for that cloud account.</li>
       </ul>
       <p>We do <strong>not</strong> permanently store camera images or video.</p>
     </section>
 
     <section id="processing">
-      <h2>On‑Device Processing</h2>
-      <p>Face detection and embedding generation occur entirely on the device using on‑device models. Embeddings are used with cosine‑similarity to identify or verify the enrolled student at check‑in.</p>
+      <h2>Local Browser Processing</h2>
+      <p>Face detection and embedding generation are handled in the browser. Embeddings are used with cosine-similarity to identify or verify the enrolled student at check-in.</p>
     </section>
 
     <section id="exports">
       <h2>Exports & Backups</h2>
-      <p>If you use the App’s export features, the exported file remains under your control. You are responsible for how you store or share exported data.</p>
+      <p>Export and auto-export features create backup files that remain under your control. You are responsible for how you store, protect, restore, or share exported data. Exports and auto-export are recommended because browser storage can be lost through browser resets, cache clearing, device failure, user error, or other events outside NicamCo's control.</p>
+      <p>Cloud backup is another way to help protect against data loss. If you connect a cloud account, your data can be backed up to the NicamCo server for that account. You still own your data and are encouraged to keep your own exports in addition to cloud backup.</p>
+      <p>NicamCo and its owner are not responsible or liable for lost, deleted, overwritten, corrupted, or unavailable data. The user assumes ownership and responsibility for maintaining appropriate backups.</p>
     </section>
 
     <section id="retention">
       <h2>Data Retention & Deletion</h2>
       <ul>
-        <li>You may delete a student’s face enrollment at any time from the Students table; this removes the stored embeddings.</li>
-        <li>Uninstalling the App removes local data stored in the App’s directories. (Data you exported elsewhere is unaffected.)</li>
+        <li>You may delete a student’s face enrollment at any time from the Students table; this removes the stored embeddings from the current browser storage.</li>
+        <li>You may export your data at any time using the Export Data feature.</li>
+        <li>Clearing browser data, using a different browser/profile, resetting a device, or losing a device may remove local data. Data you exported elsewhere is unaffected.</li>
+        <li>If you use or wish to use cloud backup, contact NicamCo to request help with cloud data access, restoration, cancellation, or deletion when necessary and possible.</li>
       </ul>
     </section>
 
     <section id="children">
       <h2>Children & Student Use</h2>
-      <p>The App is intended for use by martial‑arts schools and families to track attendance and rank progress. If students are minors, a parent/guardian or school operator should manage enrollment and exports in accordance with applicable laws and school policies.</p>
+      <p>Belt Test Tracker is intended for use by martial-arts schools and families to track attendance and rank progress. If students are minors, a parent/guardian or school operator should manage enrollment, exports, cloud backup, and student data according to their own legal and school requirements.</p>
     </section>
 
     <section id="security">
       <h2>Security</h2>
-      <p>Data is stored locally using standard platform storage. Protect device access with a passcode and limit physical access to the device. For shared or kiosk devices, configure system‑level protections where possible.</p>
+      <p>Local data is stored using standard browser storage. Protect access to the computer, tablet, phone, browser profile, and cloud account credentials. For shared or kiosk devices, configure screen locks, browser access controls, and staff-only passphrases where possible.</p>
+      <p>Avoid actively editing the same cloud account from two devices at the same time. Belt Test Tracker is local-first and uses snapshot-style cloud backup. Using two devices at once can create cloud/local differences and may increase the risk of unwanted overwrites or corrupted working data.</p>
     </section>
 
     <section id="sharing">
       <h2>Data Sharing</h2>
-      <p>The App does not share personal data with NicamCo or third parties. There are no advertising SDKs.</p>
+      <p>NicamCo does not sell user data. NicamCo does not share user data with advertisers or unrelated third parties.</p>
+      <p>NicamCo will access, modify, restore, delete, or otherwise work with a user's cloud data only at the account owner's request and only when NicamCo determines it is necessary and possible to do so.</p>
+      <p>As of this policy date, cloud and premium feature access must be requested or cancelled by email at <a href="mailto:support@nicamco.atlassian.net">support@nicamco.atlassian.net</a>. This process may be updated later.</p>
+    </section>
+
+    <section id="google-play">
+      <h2>Google Play & Android App Distribution</h2>
+      <p>The Android WebView version of Belt Test Tracker may be installed or updated through Google Play. Google Play may process information related to app distribution, installation, updates, device compatibility, crash reporting, reviews, Play account activity, and other Google Play services according to Google’s own policies.</p>
+      <p>Google Play is not used by NicamCo to manage Belt Test Tracker subscriptions, cloud backup access, premium entitlements, student limits, or payments. Those items are handled by NicamCo as described in this policy.</p>
+      <p>The same Belt Test Tracker privacy practices described on this page apply whether the service is accessed through a regular web browser or through the Android WebView wrapper, except that the Android app may use Google Play for app installation and updates.</p>
     </section>
 
     <section id="changes">
@@ -103,26 +113,10 @@
       <p>Questions? Contact: <a href="mailto:support@nicamco.atlassian.net">support@nicamco.atlassian.net</a></p>
       <br><br>
         <div class="muted" style="margin-bottom:8px">
-  <a rel="prev" href="#" onclick="
-    if (document.referrer && document.referrer !== location.href) {
-      history.back();
-    } else {
-      window.location.href = 'index.html';
-    }
-    return false;
-  ">← RETURN</a>
-    </section>
+  <a rel="prev" href="index.html">← RETURN</a>
+    </div></section>
   </main>
 
-  <div class="muted" style="margin-bottom:8px">
-  <a rel="prev" href="#" onclick="
-    if (document.referrer && document.referrer !== location.href) {
-      history.back();
-    } else {
-      window.location.href = 'index.html';
-    }
-    return false;
-  ">← RETURN</a>
-</div>
+
 </body>
 </html>
